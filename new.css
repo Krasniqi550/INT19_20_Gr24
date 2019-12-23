@@ -1,84 +1,101 @@
+body {  
+	        font-family: Arial;
+			margin: 0;
+			padding: 0;
+			background: #e5e5e5;
+			}
 
-body {	
-margin:0;
-}
-
-
-
-.header {
-	float:right;
-    background-color:red;
-	width:100%;
-}
-
-.header h5 {
-	float:left;
-	color:#555;
-}
-
-.inputt {
+.searchbox{
 	
-	float:right;
-	margin-top:1%;
-	margin-right:1%;
+        position:absolute;
+        left:84%;   
+        top:1%;
+	
+        
+    }  
+	.header h6 {
+		margin-left:20px;
+	}
+   
+   form.example input[type="text"]
+    {   
+	    margin-top:6px;
+        background: #fff;
+        width:200px;
+        height:30px;
+        padding: 5px;
+        position: relative;
+        display:inline-block;
+        font-size:10px;
+        box-sizing: border-box;
+		border-radius: 20px 20px 20px 20px;
+		border: 1px solid black;
+        
+    }
+	form.example button {
+	
+   
+     padding: 5px;
+     background: black;
+     color: white;
+     font-size: 10px;
+     border: 1px solid black;
+     border-radius:100%;
+     cursor: pointer;
+	}
+	
+	
+#navbar{
+	padding:15px;
+	background:pink;
 	
 }
-
-
-.navbar{
-	
+  ul {
+  margin-top:-50px;
+  list-style-type: none;
+  margin-bottom:2%;
+  margin-left:75%;
+  padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  width:100%;
-  height:5%;
-	
-}	
+  border-radius:20px 20px 20px 20px;
+}
 
-.navbar a{
-  float: right;
-  display:block;
-  color: white;
+li {
+  float: left;
+}
+
+li a {
+	
+  display: block;
+  color: pink;
   text-align: center;
-  padding: 10px 15px;
+  padding: 15px 16px;
   text-decoration: none;
-  background-color:blue;
-
-}
-.fakeimg {
-  background-color: #aaa;
-  height:360px;
-  width:610px;
-  padding: 20px;
 }
 
+li a:hover {
+  background-color: #111;
+}
+ 
+.home {
+	color:white;
+}
 
-
-.main {   
-  -ms-flex: 70%; /* IE10 */
-  flex: 70%;
-  background-color: green;
-  padding: 20px;
-  
+#maindiv1 {
+            width: 100%;
+	        margin:2px;
+}
+#divleft {
 	
-}
-.quotes {
-	
-  overflow: hidden;
-  background-color: #333;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  width:100%;
-  height:30%;
-  
-  
-}
-
-
-
+	        margin-left:10px;
+            width:610px;
+			height:360px;
+            float: left;
+			background:black;
+			border:2px solid white;
+			
+        }
 
 
 
