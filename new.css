@@ -14,7 +14,7 @@ body {
         
     }  
 	.header h6 {
-		margin-left:20px;
+		margin-left:15px;
 	}
    
    form.example input[type="text"]
@@ -47,28 +47,32 @@ body {
 	
 #navbar{
 	padding:15px;
-	background:pink;
+	
+	background:green;
 	
 }
   ul {
-  margin-top:-50px;
-  list-style-type: none;
-  margin-bottom:2%;
-  margin-left:75%;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  border-radius:20px 20px 20px 20px;
+	  
+	  margin-top:-50px;
+	  list-style-type: none;
+	  margin-bottom:2%;
+	  margin-left:75%;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	  border-radius:25px 25px 25px 25px;
 }
 
 li {
-  float: left;
+    float: left;
+	border-left:0.5px solid green;	
+	
 }
 
 li a {
-	
+  
   display: block;
-  color: pink;
+  color: green;
   text-align: center;
   padding: 15px 16px;
   text-decoration: none;
@@ -86,20 +90,46 @@ li a:hover {
             width: 100%;
 	        margin:2px;
 }
-#divleft {
-	
+#divleft { 
+            margin-bottom:50 px;
+	        margin-top:50px;
 	        margin-left:10px;
             width:610px;
 			height:360px;
             float: left;
 			background:black;
-			border:2px solid white;
+			border:5px solid white;
 			
         }
 
+#divright {
+	margin-left:50px;
 
+	float:left;
+	margin-right:20px;
+	margin-top:150px;
+			
+	
+}
+.text{
+	text-align:justify;
+	 padding: 10px;
+	  width: 799px;
+	  height: 100px;
+	  text-align: justify;
+}
 
-
+.continue a{
+	color:red;
+}
+.continue  {
+	text-align:right;
+}
+.hrr{
+	 margin-top:31%;
+	 border: 2px solid green;
+	
+}
 
 
 
