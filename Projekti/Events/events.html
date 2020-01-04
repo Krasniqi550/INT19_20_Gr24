@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="stili.css">
+<script>
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+
+<body>
+<div class="header">
+<form action="">
+  <input type="search" placeholder="Search...">
+  <i class="fa fa-search"></i>
+</form>
+</div>
+ <div class="bgimage">
+ 	<div class="menu">
+ 		<div class="leftmenu">
+ 			<h2>  </h2>
+ 		</div>
+ 		<div class="rightmenu"> 
+ 			<ul>
+ 				<li id="firstlist"> </li>
+ 				<li> HOME </li>
+ 				<li >ABOUT US</li>
+ 				<li> EVENTS</li>
+ 				<li> GALLERY</li>
+ 				<li> THE FUTURE</li>
+ 			</ul>
+ 		</div>
+ 	</div>
+ 	 <div class="Sidebar">
+						<div class="sidebarpics">
+							<p></p>
+							<h5>ELECTRIC & HYBRID VEHICLE TECHNOLOGY EXPO EUROPE.<br> The leading meeting place for the latest powertrain technology in the e-mobility industry.</h5>
+							<img src="electric.jpg" width="300" height="200">
+							<h5>REVOLUTION Conference <br> KNOW THAT FEELING OF BEING MOTIVATED AND FULL OF ENERGY? OF HAVING HEARD SOMETHING THAT CHANGES YOUR WHOLE OUTLOOK? CAN’T WAIT TO PUT IT TO ACTION?--->THAT’S WHAT YOU GET AT REVOLUTION CONFERENCE.</h5>
+							<img src="revolution.png" width="300" height="200" >
+							<h5>Nordic EV Summit 2020 <br> ENTERING THE ELECTRIC ERA </h5>
+							<img src="nordic.jpg" width="280" height="200">
+                        </div> 
+    </div>    
+    
+   
+    <br> <br>
+   
+<video autoplay loop id="myVideo">
+  <source src="geneva.mp4" type="video/mp4">
+</video>
+
+
+<div class="content">
+  <h1>Geneva Motor Show </h1>
+  <p>Speed and performance were major talking points for cars featured at the Geneva motor show. While Volkswagen opted to highlight its electric cars, Ferrari showed off one of its fastest cars yet. Roadshow on CBSN gave an inside look at the show's top cars and how much you would need to drive one home.</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+
+	<script>
+//  the video
+var video = document.getElementById("myVideo");
+// the button
+var btn = document.getElementById("myBtn");
+// Pause and play the video, and changing the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<div class="timer">
+	<p class="rev"> REVOLUTION Week, March 31st, 2020, Amsterdam <br>
+The annual keynote and networking event focussed on the future of Mobility.<br> Save the date and get your tickets. </p>
+	<img src="rev.png" width="180" height="90">
+	<div class="expert">
+		<img src="experts.png" width="350" height="195">
+		<p> Over the years REVOLUTION Conference has had the honour to welcome many thought leaders and industry pioneers to the stage. From CEOs of some of the world's leading companies such as Isabelle Kocher (ENGIE), Dirk Ahlborn (HyperloopTT) and Martin Roemheld (Volkswagen), to world renowned authors such as Tony Seba, eMobility advocates, serial entrepreneurs, and even a NASA astronaut. </p>
+	</div>
+	<p id="demo"></p>
+</div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 31, 2020 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+	
+<div class="aboutevents"></div>
+
+
+
+</body>
+</html>
