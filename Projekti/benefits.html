@@ -88,3 +88,49 @@ IF YOU WANT TO KNOW MORE ABOUT ELETRIC CARS , please click <a href="https://www.
 		<td class="nentitujt"> Recent findings have shown that several EV features can improve safety. EVs tend to have a lower centre of gravity that makes them less likely to roll over. They can also have a lower risk for major fires or explosions and the body construction and durability of EVs may make them safer in a collision. </td></tr> </table>
 	
 	</div>
+
+</body>
+<script type="text/javascript">
+var currentTime = new Date().getHours();
+if (7 <= currentTime && currentTime < 18) {
+    if (document.body) {
+        document.body.background = "day.jpg";
+    }
+}
+else {
+    if (document.body) {
+        document.body.background = "night.jpg";
+    }
+}
+</script>
+	
+	
+	
+	
+	<p>Shtypeni nje numer nga 1 deri ne 10</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+	
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x < 1 || x > 10) {
+    text = "Gabim , numri nuk eshte brenda 1-10";
+  } else {
+    text = "Numri i dhene eshte ne rregull";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>	
+
+</html>
