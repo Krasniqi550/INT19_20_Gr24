@@ -130,7 +130,7 @@ body{
 #myVideo {
     position: absolute;
     float:left;
-    margin-top:-70px;
+    margin-top:-80px;
     height:85%;
     width:60%;
     margin-right: 600px;
@@ -260,6 +260,6 @@ body{
 		
 		
 		background-color:#cce6ff;
-		height:81px;
+		height:50px;
 	}
     
