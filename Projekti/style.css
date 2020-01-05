@@ -288,6 +288,65 @@ body{
 .continue1 a{
 	color:red;
 }
+
+
+	#wrap {
+
+		margin-top:20px;
+		width:100%;
+		height: 200px;
+		background-color: white;
+    
+           }
+	
+.majtas  {
+		width:675px;
+		background-color:white;
+		height:200px;
+		float:left;
+		margin-left: 5px;
+		font-size: 20px;
+
+	  }
+
+.djathtas {
+		width:600px;
+		background-color:white;
+		height:200px;
+		float:right;
+		font-size: 20px;
+
+	  }
+	
+.image1  {
+		margin-left: 20px;
+		margin-top: 25px;
+		margin-bottom:25px;
+		margin-right: 20px;
+		width:150;
+		height: 150;
+	 }
+	
+.image2{
+		margin-left: 20px;
+		margin-top: 25px;
+		margin-bottom:25px;
+		margin-right: 20px;
+		width:150;
+		height: 150;
+	 }
+
+button  {
+
+		background-color: #9E6CD8;
+		border:none;
+		border-radius:8px;
+		outline:none;
+		text-align:center;
+		color:white;
+		font-size:15px;
+	 }
+
 /* Footer */
 
 .divperfooter {
@@ -300,8 +359,10 @@ body{
 #part{
         display:grid;
 }
-
-
+ 
+ 
+  
+    
 
 
 .contactus{
@@ -358,9 +419,9 @@ body{
 	
 	.imgg{
 		width:95px;
-		height:95px;
+		height:90px;
 		background:black;
-		margin-top:50px;
+		margin-top:20px;
 		margin-bottom:10px;
 		
 		
@@ -368,4 +429,11 @@ body{
 	.left{
 		
 		margin-left:15px;
+		width: 20%;
+		
+	}
+	.left p{
+
+		width:233px;
+
 	}
