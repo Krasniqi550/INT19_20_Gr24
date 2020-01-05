@@ -99,38 +99,41 @@ The annual keynote and networking event focussed on the future of Mobility.<br> 
 	<p id="demo"></p>
 </div>
 <script>
-// Set the date we're counting down to
+// data prej se ciles numrojm
 var countDownDate = new Date("March 31, 2020 09:00:00").getTime();
 
-// Update the count down every 1 second
+// ndryshoje qdo sekond
 var x = setInterval(function() {
 
-  // Get today's date and time
+  // data dhe koha sot
   var now = new Date().getTime();
     
-  // Find the distance between now and the count down date
+  // distanca mes kohes tash dhe asaj qe po numrojm
   var distance = countDownDate - now;
     
-  // Time calculations for days, hours, minutes and seconds
+  // llogaritja e ditve,orve,minutave dhe kohes
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
+  
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
-  // If the count down is over, write some text 
+  // kur mbaron shfaqe nje text 
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
-	
-<div class="aboutevents"></div>
 
+<footer>
+  <p>For more info..</p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  electricCar@gmail.com</a>.</p>
+</footer>
 
 
 </body>
