@@ -1,0 +1,24 @@
+CACHE MANIFEST
+#v1.0
+
+CACHE:
+# pages
+projekti (1).html
+
+# styles 
+style.css
+
+# images
+2.jpg
+3.jpg
+4.jpg
+5.jpg
+6.jpg
+geneva.mp4
+Tesla.png
+
+NETWORK:
+*
+
+FALLBACK:
+6.jpg
